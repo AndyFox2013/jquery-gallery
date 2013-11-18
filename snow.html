@@ -11,7 +11,10 @@
 		<!-- load Menu -->
 		<link rel="stylesheet" href="menu.css">
 		<!-- load CSS Stylesheet -->
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="snow/snowstyles.css">
+		<!-- load Snow -->
+		<script src="snow/jquery.snow.js"></script>
+
     </head>
 <body> <div id="container">
 
@@ -19,14 +22,14 @@
 	<h1>CSS & Jquery Exercise</h1>
 	<div id='cssmenu'>
 <ul>
-   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li><a href='index.html'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Galleries</span></a>
       <ul>
          <li><a href='classic/classic-demo.html'><span>Galleria</span></a>
          <li><a href='coin-slider/coin-slider.html'>Coin Slider</span></a>
          </li>
       </ul>
-	  <li><a href="snow.html">Snow</span></a></li>
+	<li class='active'><a href="snow.html">Snow</span></a></li>
    </li>
 </ul>
 </div>
@@ -35,14 +38,11 @@
 	<br/>
 	<hr>
 	
-	<p>
-	                                       
-										                     
-	
-	                                     
-	
-		
-	</p>
-	
+	<script>
+		$(document).ready( function(){
+        $.fn.snow();
+		});
+</script>
+
     </div></body>
 </html>
